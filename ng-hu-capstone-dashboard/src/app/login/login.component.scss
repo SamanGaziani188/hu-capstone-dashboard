@@ -14,53 +14,51 @@
   color: #fff;
   padding: 3em;
     .input{
-      height: 46px;
+      height: 30px;
+      width: 250px;
       padding: 10px 16px;
       font-size: 18px;
       background: 0 0;
       color: #fff;
-      border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    }
+      border-bottom: 2px solid rgba(255, 255, 255, 0.5);}
   .form-element{
-    padding: 8px 0;
+    padding: 15px 0;
+
     input::-webkit-input-placeholder {
-      color: rgba(255, 255, 255, 0.6)
-    }
+      color: rgba(255, 255, 255, 0.6)}
   .user-avatar {
         border-radius: 50%;
-        border: 2px solid #fff;
-      }
+        border: 2px solid #fff;}
     h1 {
       font-weight: 300;
       margin-top: 20px;
       margin-bottom: 10px;
       font-size: 36px;
       small {
-          color: rgba(255, 255, 255, 0.7);
-            }
+          color: rgba(255, 255, 255, 0.7);}
         }
 
 
-}
+  }
 
-.rounded-btn{
-  border-radius: 50px;
-  color: rgba(255,255,255,0.8);
-  background : #222;
-  border: 2px solid rgba(255,255,255,0.8);
-  font-size: 18px;
-  line-height: 40px;
-  padding: 5px 30px;
-  margin-left: 10px
-}
-.rounded-btn:hover,
-.rounded-btn:focus,
-.rounded-btn:active,
-.rounded-btn:visited {
-    color: rgba(255, 255, 255, 1);
-    border: 2px solid rgba(255, 255, 255, 1);
-    background: rgb(91, 155, 207);
-    outline: none;
-}
+  .rounded-btn{
+    border-radius: 50px;
+    color: rgba(255,255,255,0.8);
+    background : #222;
+    border: 2px solid rgba(255,255,255,0.8);
+    font-size: 18px;
+    line-height: 40px;
+    padding: 5px 30px;
+    margin-left: 10px}
+
+  .rounded-btn:hover,
+  .rounded-btn:focus,
+  .rounded-btn:active,
+  .rounded-btn:visited {
+      color: rgba(255, 255, 255, 1);
+      border: 2px solid rgba(255, 255, 255, 1);
+      background: rgb(91, 155, 207);
+      outline: none;
+  }
 
 }
