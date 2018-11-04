@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import {RouterModule, Routes} from '@angular/router';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { SignuppageComponent } from './signuppage/signuppage.component';
+import { SidebarComponent } from './layout/sidebar/sidebar.component';
+import { HeaderComponent } from './layout/header/header.component';
 
 const appRoutes: Routes = [
     { path: 'login' , component: LoginComponent},
@@ -21,6 +23,8 @@ const appRoutes: Routes = [
     LoginComponent,
     MainpageComponent,
     SignuppageComponent,
+    SidebarComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
