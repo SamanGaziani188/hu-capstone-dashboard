@@ -1,5 +1,6 @@
 <div class="signup-page">
   <div id= 'rectangle'>
+    <img class = 'user-avatar' src="assets/images/logo.png" width="150px" />
     <form>
     <h4 class= "form-element" >Fill out this form and wait for confirmation mail to get started with your capstone project.</h4>
       <div class= "form-element title" >
@@ -46,37 +47,9 @@
           </div>
         </td>
         </tr>
-        <tr><h2 class = 'form-element'>Student 2</h2></tr>
-        <tr>
-            <td><div class= "form-element" >
-                <h3>Student Name:</h3>
-                <input type = "text" class = "input" id = "" placeholder="e.g. Saman Gaziani">
-            </div>
-            </td>
-            <td><div class= "form-element" >
-                <h3>Student ID:</h3>
-                <input type = "text" class = "input" id = "" placeholder="e.g. 02494">
-            </div>
-          </td>
-          </tr>
-          <tr>
-            <td><div class= "form-element" >
-              <h3>Major: </h3>
-                <select class = 'input-select'>
-                    <option value="CS"> Computer Science </option>
-                    <option value="EE"> Electrical Engineering </option>
-                    <option value="SDP"> Social Development Policy </option>
-                    <option value="CnD"> Communication and Design </option>
-                </select>
-            </div>
-          </td>
-          <td>  <div class= "form-element" >
-                <h3>Academic Advisor: </h3>
-                <input type = "text" class = "input" id = "" placeholder="Name">
-            </div>
-          </td>
-          </tr>
       </table>
+      <a class="btn rounded-btn" [routerLink]="['/dashboard']"> Register </a>&nbsp;
+                <a class="btn rounded-btn" [routerLink]="['/login']"> Log in </a>
     </form>
   </div>
 </div>
