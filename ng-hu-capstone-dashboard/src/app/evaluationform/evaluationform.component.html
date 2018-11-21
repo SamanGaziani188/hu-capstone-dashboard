@@ -1,0 +1,79 @@
+<div class="signup-page">
+    <div id= 'rectangle'>
+      <form>
+      <table>
+      <tr>
+        <td>
+            <div class= "form-element title" >
+              <h3>Evaluator Name:</h3>
+            </div>
+          <div class="form-element">
+            <input type = "text" class = "input" id = "" placeholder="Evaluator Name">
+          </div>
+        </td>
+      </tr>
+        <div class= "form-element" >
+            <h3>Choose the project you want to evaluate </h3>
+            <select class = 'input-select'>
+              <option value="weather-pyramid"> Weather Pyramid </option>
+              <option value="smart-card"> Smart Card </option>
+              <option value="crack-detection"> Crack Detection </option>
+              <option value="dc-dc-converter"> Dc-Dc Converter </option>
+              <option value="haptic"> Haptic </option>
+              <option value="precision-agri-bot"> Precision Agri Bot </option>
+              <option value="multi-agent-robotics-testbed"> Multi-agent robotics testbed </option>
+              <option value="small-traffic-management"> Small Traffic Management </option>
+              <option value="garbage-collecter"> Garbage Collecter </option>
+              <option value="sign-interpreter"> Sign Interpreter </option>
+              <option value="smart-theatre"> Smart Theatre </option>
+              <option value="muon-detector"> Muon Detector </option>
+            </select>
+        </div>
+        <a class = 'form-element'>
+          The submitted document lists all the necessary features/functions of the final prototype to be delivered at the end of Capstone II
+        </a>
+        <div class="slidecontainer">
+            <input type="range" min="0" max="10" step = '1' value="0" class="slider" id="myRange" oninput="showAmount(this.value)" onchange="showAmount(this.value)">
+            <span id='amount'> 0 </span>
+        </div>
+
+        <a class = 'form-element'>
+            Does the amount of work required for achieving that list justifies the workload of the project (10hrs/wk/student over two semesters)?
+          </a>
+          <div class="slidecontainer">
+              <input type="range" min="0" max="10" step = '1' value="0" class="slider" id="myRange" oninput="showAmount(this.value)" onchange="showAmount(this.value)">
+              <span id='amount'> 0 </span>
+          </div>
+
+          <a class = 'form-element'>
+              Does the document provide quantitative specifications (Engineering Design Specs) and constraints for these functions?
+            </a>
+            <div class="slidecontainer">
+                <input type="range" min="0" max="10" step = '1' value="0" class="slider" id="myRange" oninput="showAmount(this.value)" onchange="showAmount(this.value)">
+                <span id='amount'> 0 </span>
+            </div>
+          <a class = 'form-element'>
+              The features chosen for Proof of concept are justifiable considering the outcomes/overall solution of the project
+          </a>
+          <div class="slidecontainer">
+            <input type="range" min="0" max="10" step = '1' value="0" class="slider" id="myRange" oninput="showAmount(this.value)" onchange="showAmount(this.value)">
+            <span id='amount'> 0 </span>
+          </div>
+
+          <a class = 'form-element'>
+              Suggested solution has novelty and there is potential for sufficient intellectual contribution.
+          </a>
+          <div class="slidecontainer">
+            <input type="range" min="0" max="10" step = '1' value="0" class="slider" id="myRange" oninput="showAmount(this.value)" onchange="showAmount(this.value)">
+            <span id='amount'> 0 </span>
+          </div>
+          <a class = 'form-element'>Any suggestions/recommendations for the project group:</a>
+          <br>
+          <input class = 'suggestion'>
+        </table>
+        <a class="btn rounded-btn" [routerLink]="['/dashboard ']"> Submit </a>
+
+      </form>
+    </div>
+  </div>
+

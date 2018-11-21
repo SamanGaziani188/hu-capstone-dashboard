@@ -18,18 +18,24 @@
   {
     padding-left: 20px;
     padding-bottom: 20px;
+    font-size: 22px;
+    margin-left : 2%;
+    text-align: left;
   .input{
     height: 20px;
-    width:80%;
+    width: 80%;
     padding: 10px 16px;
     font-size: 18px;
     background: 0 0;
     color: #fff;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);}
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    }
   }
-  .title{
-    text-align: center;
-    width: 50%}
+  .title
+  {
+    text-align: left;
+    width: 50%;
+  }
 
   #rectangle{
     padding: 20px;
@@ -44,7 +50,7 @@
     font-size: 18px;
     line-height: 40px;
     padding: 5px 30px;
-    margin-left: 10px}
+    margin-left: 2%;}
   .rounded-btn:hover,
   .rounded-btn:focus,
   .rounded-btn:active,
@@ -57,5 +63,22 @@
     padding:10px;
     font-size: 18px;
   }
+  .slider {
+    -webkit-appearance: none;
+    width: 500px;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    margin-left: 3%;
+    transition: opacity .2s;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.suggestion{
+  padding: 100px;
+  width : 300px;
+}
 
   }

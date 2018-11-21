@@ -10,12 +10,14 @@ import { SignuppageComponent } from './signuppage/signuppage.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { EvaluationformComponent } from './evaluationform/evaluationform.component';
 
 const appRoutes: Routes = [
     { path: 'login' , component: LoginComponent},
     { path: '' , redirectTo: '/login' , pathMatch: 'full'},
     { path: 'home' , component: MainpageComponent},
-    { path: 'signup' , component: SignuppageComponent}
+    { path: 'signup' , component: SignuppageComponent},
+    { path: 'evaluation', component: EvaluationformComponent}
 ];
 
 @NgModule({
@@ -27,6 +29,7 @@ const appRoutes: Routes = [
     SidebarComponent,
     HeaderComponent,
     FooterComponent,
+    EvaluationformComponent,
   ],
   imports: [
     BrowserModule,
