@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -11,6 +11,10 @@ import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { EvaluationformComponent } from './evaluationform/evaluationform.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {EvalFormService} from '../app/Services/evalForm_service/eval-form.service';
 
 const appRoutes: Routes = [
     { path: 'login' , component: LoginComponent},
@@ -30,13 +34,17 @@ const appRoutes: Routes = [
     HeaderComponent,
     FooterComponent,
     EvaluationformComponent,
+   // BrowserAnimationsModule
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [EvalFormService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
